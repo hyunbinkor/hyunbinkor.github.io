@@ -32,10 +32,16 @@
 
 
 
+
+
+
+
+
+
 <html
   class="not-ready lg:text-base"
   style="--bg: #faf8f1"
-  lang="ko-kr"
+  lang="ko-KR"
 >
   <head>
   <meta charset="utf-8" />
@@ -60,7 +66,7 @@
     name="description"
     content="A personal blog"
   />
-  <meta name="author" content="얼레벌레 개발일기" />
+  <meta name="author" content="전현빈" />
   
 
   
@@ -82,18 +88,55 @@
   
   
   
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/9bbeae17231cb9321f123ed98db2a7d8?s=160&amp;d=identicon" />
+  
   
 
   
   
   <link rel="preload" as="image" href="https://hyunbinkor.github.io/github.svg" />
   
-  <link rel="preload" as="image" href="https://hyunbinkor.github.io/instagram.svg" />
+  
+
   
   
 
   
   
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
 
   
   
@@ -121,7 +164,7 @@
   <meta property="og:url" content="https://hyunbinkor.github.io/">
   <meta property="og:site_name" content="얼레벌레 개발일기">
   <meta property="og:title" content="얼레벌레 개발일기">
-  <meta property="og:locale" content="ko-kr">
+  <meta property="og:locale" content="ko-KR">
   <meta property="og:type" content="website">
 
   
@@ -244,16 +287,6 @@
         rel="me"
       >
         github
-      </a>
-      
-      <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
-        style="--url: url(./instagram.svg)"
-        href="https://instagram.com/liber_vir"
-        target="_blank"
-        rel="me"
-      >
-        instagram
       </a>
       
     </nav>
